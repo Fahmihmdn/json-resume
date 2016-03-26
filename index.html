@@ -64,76 +64,76 @@
 
 		<div class="mainsect">
 			<div class="h1"><i class="fa fa-briefcase">&nbsp;Experience</i></div>
-			<div class="experience subsect">
-				<div class="h3 title"></div>
-				<div class="h4 workplace"></div>
-				<div class="h4 time"></div>
+			<div class="experience subsect" ng-repeat="exp in exps = (resumeData.experience | lowercase)">
+				<div class="h3 title">{{exp.title}}</div>
+				<div class="h4 workplace">{{exp.workplace}}</div>
+				<div class="h4 time">{{exp.time}}</div>
 				<div class="content"><ul>
 					<li></li>
 				</ul></div>
 				<div class="links">
 					<div class="subheading"><i class="fa fa-link">&nbsp;Link(s): </i></div>
-					<div class="link"></div>
+					<div class="interest" ng-repeat="link in exp.links"><a href={{link.url}}>{{link.title}}</a></div>
 				</div>
 				<div class="technologies">
 					<div class="subheading"><i class="fa fa-code-fork">&nbsp;Technology: </i></div>
-					<div class="tech"></div>
+					<div class="tech" ng-repeat="tech in exp.technologies">{{tech}}</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="mainsect">
 			<div class="h1"><i class="fa fa-code">&nbsp;Projects</i></div>
-			<div class="projects subsect">
-				<div class="h3 title"></div>
-				<div class="h4 time"></div>
-				<div class="blurb content" ></div>
-				<div class="content" ></div>
+			<div class="projects subsect" ng-repeat="project in projects = (resumeData.projects | lowercase)">
+				<div class="h3 title">{{project.title}}</div>
+				<div class="h4 time">{{project.time}}</div>
+				
+				<div class="content" >{{project.description}}</div>
 				<div class="links" >
 					<div class="subheading"><i class="fa fa-link">&nbsp;Link(s): </i></div>
-					<div class="link" ></div>
+					<div class="interest" ng-repeat="link in project.links" ><a href={{link.url}}>{{link.title}}</a></div>
 				</div>
 				<div class="technologies">
 					<div class="subheading"><i class="fa fa-code-fork">&nbsp;Technology: </i></div>
-					<div class="tech" ></div>
+					<div class="tech" ng-repeat="tech in project.technologies">{{tech}}</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="mainsect">
 			<div class="h1"><i class="fa fa-cogs">&nbsp;Skills</i></div>
-			<div class="skills subsect">
-				<div class="h3"></div>
+			<div class="skills subsect" ng-repeat="myskills in skills = (resumeData.skills | lowercase)">
+				<div class="h3">{{myskills.title}}</div>
 				<div class="technologies">
-					<div class="tech h4">
-						</div>
+					<div class="tech h4" ng-repeat="skill in skills = (myskills.skills | lowercase)">
+						{{skill}}</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="mainsect">
 			<div class="h1"><i class="fa fa-users">&nbsp;Organization and Volunteer Activities</i></div>
-			<div class="organization subsect">
-				<div class="h3 title"></div>
-				<div class="h4 time"></div>
+			<div class="organization subsect" ng-repeat="orga in organization = (resumeData.organization | lowercase)">
+				<div class="h3 title">{{orga.title}}</div>
+				<div class="h4 time">{{orga.time}}</div>
 				<div class="content">
                 <ul>
-					<li></li>
+					<li ng-repeat="desc in orga.description">{{desc}}</li>
 				</ul>
-
+					{{orga.details}}
 				</div>
 				<div class="links">
 					<div class="subheading"><i class="fa fa-link">&nbsp;Link(s): </i></div>
-					<div class="link" ></div>
+					<div class="interest" ng-repeat="link in orga.links"><a href={{link.url}}>{{link.title}}</a></div>
 				</div>
 			</div>
 		</div>
 
 		<div class="mainsect">
 			<div class="h1"><i class="fa fa-certificate">&nbsp;Certifications</i></div>
-			<div class="certification subsect">
-				<div class="h3"></div>
-				<div class="content blurb"></div>
+			<div class="certification subsect" ng-repeat="cert in certification = (resumeData.certification | lowercase)">
+				<div class="h3">{{cert.title}}</div>
+				<div class="content flash">{{cert.details}}</div>
 			</div>
 		</div>
 	</div>

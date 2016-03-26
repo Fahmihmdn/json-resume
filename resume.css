@@ -34,7 +34,7 @@ div {
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
-.h3, .projects .h4, .extracurriculars .h4 {
+.h3, .projects .h4, .organization.h4 {
     margin-top: 0.5em;
 }
 .skills .h3 {
@@ -80,11 +80,11 @@ div {
 }
 
 /* project content */
-.blurb {
+.flash {
     font-style: italic;
 }
 .tech {
-    background-color: #BB8FCE;
+    background-color: #A2EEF2;
     margin-left: 0.5em;
     margin-right: 0.5em;
     padding-left: 0.5em;

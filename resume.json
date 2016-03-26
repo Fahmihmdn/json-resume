@@ -50,23 +50,19 @@
             "title":        "Microsoft Student Partner",
             "workplace":    "Microsoft Indonesia",
             "time":         "August 2014 - Present",
-            "achievements": ["",
-                            "",
-                            ""],
+            "achievements": [""],
             "technologies": ["Windows", "Windows Phone", "Windows Azure", "C#"],
             "links":        [{
                 "title":    "Microsoft Social Developer Network",
                 "url":      "https://msdn.microsoft.com/microsoftstudentpartners.aspx"
                 }],
-            "tags":         ["", "", ""]
+            "tags":         [""]
         },
         {
             "title":        "Web Developer",
             "workplace":    "StudentsxCEOs",
             "time":         "July 2015 - Present",
-            "achievements": ["",
-                            "",
-                            ""],
+            "achievements": [""],
             "technologies": ["Wordpress", "MySQL", "CSS"],
             "links":        [{
                 "title":    "StudentsxCEOs Official Web",
@@ -145,8 +141,8 @@
             "description":  [],
             "details":      "The MSP program enhances students' employability by offering training in skills not usually taught in academia, including knowledge of Microsoft technologies. MSP (FY 15-16) State Polytechnic of Jakarta Representatives",
             "links":        [{
-                "title":    "",
-                "url":      ""
+                "title":    "Microsoft Student Partners",
+                "url":      "https://msdn.microsoft.com/microsoftstudentpartners.aspx"
                 }],
             "tags":         []
         },
