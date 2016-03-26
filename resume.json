@@ -1,0 +1,177 @@
+{
+    "profile": {
+        "name":     "Fahmi Hamdani",
+        "email":    "mail@fahmihamdan.com  / fahmihamdan@hotmail.com",
+		"address": "Cheras, Kuala Lumpur",
+        "phone":    "+6018 211 8325",
+        "interests":  [
+            {
+                "title":    "Web Design",
+                "url":      ""
+            },
+            {
+                "title":    "UI/UX",
+                "url":      ""
+            },
+            {
+                "title":    "Graphic Design",
+                "url":      ""
+            }
+        ]
+    },
+
+    "education":    [
+        {
+            "school":   "Asia e University",
+            "year":     "2012 - Present",
+            "degree":   "Bachelor Degree",
+            "major":    "Information System",
+            "gpa":      "3.48/4",
+            "courses":  ["", "", "", "", ""],
+            "tags":     ["education"]
+        }
+		
+    ],
+	
+	 "education2":    [
+	 {
+            "school2":   "State Polytechnic of Jakarta",
+            "year2":     "2012 - 2016",
+            "degree2":   "Bachelor Degree",
+            "major2":    "Information Technology",
+            "gpa2":      "3.36/4",
+            "courses2":  ["", "", "", "", ""],
+            "tags2":     ["education"]
+        }
+	     ],
+
+    "experience":     [
+        {
+            "title":        "Microsoft Student Partner",
+            "workplace":    "Microsoft Indonesia",
+            "time":         "August 2014 - Present",
+            "achievements": ["",
+                            "",
+                            ""],
+            "technologies": ["Windows", "Windows Phone", "Windows Azure", "C#"],
+            "links":        [{
+                "title":    "Microsoft Social Developer Network",
+                "url":      "https://msdn.microsoft.com/microsoftstudentpartners.aspx"
+                }],
+            "tags":         ["", "", ""]
+        },
+        {
+            "title":        "Web Developer",
+            "workplace":    "StudentsxCEOs",
+            "time":         "July 2015 - Present",
+            "achievements": ["",
+                            "",
+                            ""],
+            "technologies": ["Wordpress", "MySQL", "CSS"],
+            "links":        [{
+                "title":    "StudentsxCEOs Official Web",
+                "url":      "https://www.studentsxceos.org/"
+                }],
+            "tags":         [""]
+        }
+    ],
+
+    "projects":   [
+        {
+            "title":        "StudentsxCEOs Official Web Development",
+            "time":         "August 2015 - October 2015",
+            "blurb":        "",
+            "description":  "Developed and maintained website for StudentsxCEOs Jakarta Chapter organization using WordPress.",
+            "technologies": ["Wordpress", "Photoshop", "HTML"],
+            "links":        [{
+                "title":    "StudentsxCEOs Official Web",
+                "url":      "https://www.studentsxceos.org/"
+                }],
+            "tags":         [""]
+        },
+        {
+            "title":        "StudentsxCEOs Summit Web Development",
+            "time":         "December 2014 - May 2015",
+            "blurb":        "",
+            "description":  "Developed and maintained a website for StudentsxCEOs Annual Event.",
+            "technologies": ["CSS", "HTML", "Photoshop", "MySQL"],
+            "links":        [{
+                "title":    "SxC Summit Web",
+                "url":      "https://www.sxcsummit.com"
+                }],
+            "tags":         [""]
+        },
+		 {
+            "title":        "Javanecipe",
+            "time":         "May 2014",
+            "blurb":        "",
+            "description":  "Windows Phone Application named 'Javanecipe'. This Application help and give you find many variant Javanese food recipe including the method for making it.",
+            "technologies": ["Windows Phone", "XAML", "C#"],
+            "links":        [{
+                "title":    "Javanecipe App",
+                "url":      "https://www.microsoft.com/en-us/store/apps/javanecipe/9wzdncrdllrb"
+                }],
+            "tags":         [""]
+        }
+    ],
+
+    "skills":   [
+        {
+            "title":        "Programming",
+            "skills":       ["HTML", "CSS", "SQL", "PHP", "Wordpress", "JavaScript", "AngularJS"]
+        },
+        {
+            "title":        "Graphic",
+            "skills":       ["Adobe Illustrator", "Adobe Photoshop"]
+        }
+    ],
+
+    "organization": [
+        {
+            "title":        "StudentsxCEOs",
+            "time":         "2015 - 2016",
+            "description":  ["Marketing - IT Department, Jakarta Chapter.",
+                            "In Charge of IT and Web Operation"],
+            "details":      "",
+            "links":        [{
+                "title":    "Website",
+                "url":      "http://www.studentsxceos.org"
+                }],
+            "tags":         []
+        },
+        {
+            "title":        "Microsoft Student Partner Indonesia",
+            "time":         "2014 - 2016",
+            "description":  [],
+            "details":      "The MSP program enhances students' employability by offering training in skills not usually taught in academia, including knowledge of Microsoft technologies. MSP (FY 15-16) State Polytechnic of Jakarta Representatives",
+            "links":        [{
+                "title":    "",
+                "url":      ""
+                }],
+            "tags":         []
+        },
+		{
+            "title":        "Computer Student Club",
+            "time":         "2014 - 2015",
+            "description":  [],
+            "details":      "Learn windows based application",
+            "links":        [{
+                "title":    "",
+                "url":      ""
+                }],
+            "tags":         []
+        }
+    ],
+
+    "certification":       [
+        {
+            "title":        "Microsoft Technology Associate",
+            "details":      "Windows Operation System Fundamentals (Microsoft, License 11419266)",
+            "tags":         [""]
+        },
+        {
+            "title":        "EF Language Test",
+            "details":      "60 Intermediate User",
+            "tags":         [""]
+        }]
+}

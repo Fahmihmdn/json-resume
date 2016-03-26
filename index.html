@@ -14,28 +14,50 @@
 		
 
 		<div class="sect head">
-			<div class="h1"></div>
-			<div class="subhead" ></div>
-			<div class="subhead" ><i class="fa fa-home fa-2x"></i> <i class="fa fa-mobile fa-2x"></i></div>
+			<div class="h1">{{resumeData.profile.name}}</div>
+			<div class="subhead">{{resumeData.profile.email}}</div>
+			<div class="subhead" ><i class="fa fa-home fa-lg">&nbsp;{{resumeData.profile.address}}</i> &nbsp; &nbsp; &nbsp; 
+            					 <i class="fa fa-mobile fa-lg">&nbsp;{{resumeData.profile.phone}}</i>
+            </div>
 			<div class="button">
-				<div class="buttonlink" >
-					
+				<div class="interest" ng-repeat="interests in resumeData.profile.interests">
+					{{interests.url}} {{interests.title}}
 				</div>
 			</div>
-            <div class="subhead" ><i class="fa fa-linkedin-square"></i><i class="fa fa-github"></i><i class="fa fa-globe"></i></div>
+            <div class="subhead" >
+            <a href="https://id.linkedin.com/in/fahmihamdan"><i class="fa fa-linkedin-square fa-2x"></i></a> &nbsp;&nbsp;
+            <a href="http://github.com/Fahmihmdn"><i class="fa fa-github fa-2x"></i></a> &nbsp;&nbsp;
+            <a href="http://fahmihamdan.com"><i class="fa fa-globe fa-2x"></i></a>
+            </div>
 		</div>
 
 		<div class="mainsect">
 			<div class="h1"><i class="fa fa-graduation-cap">&nbsp;Education</i></div>
-			<div class="education subsect">
-				<div class="h3"></div>
-				<div class="h4 workplace links"></div>
-				<div class="h4 workplace links"> - GPA: </div>
-				<div class="h4 time"></div>
+			<div class="education subsect" ng-repeat="edu in edus = (resumeData.education | lowercase)">
+				<div class="h3">{{edu.degree}} - {{edu.major}}</div>
+				<div class="h4 workplace button">{{edu.school}}&nbsp;</div>
+				<div class="h4 workplace button"> - GPA: {{edu.gpa}} </div>
+				<div class="h4 time">{{edu.year}}</div>
+                
                 <div class="courses" ng-if="edu.courses.length">
-					
+					<div class="subhead content">Kuala Lumpur - Malaysia.  In collaboration with State Polytechnic of Jakarta</div>
+					<table class="courses-table table content"><tr>
+					</tr></table>
 				</div>
-				<br ng-if="!edu.courses.length">
+                
+			</div>
+            <div class="education subsect" ng-repeat="edu2 in edus2 = (resumeData.education2 | lowercase)">
+				<div class="h3">{{edu2.degree2}} - {{edu2.major2}}</div>
+				<div class="h4 workplace button">{{edu2.school2}}&nbsp;</div>
+				<div class="h4 workplace button"> - GPA: {{edu2.gpa2}} </div>
+				<div class="h4 time">{{edu2.year2}}</div>
+                
+                <div class="courses" ng-if="edu2.courses2.length">
+					<div class="subhead content">Depok - Indonesia</div>
+					<table class="courses-table table content"><tr>
+					</tr></table>	
+				</div> 
+				<br ng-if="!edu2.courses2.length">
 				
 			</div>
 		</div>
@@ -50,11 +72,11 @@
 					<li></li>
 				</ul></div>
 				<div class="links">
-					<div class="subheading">Link(s): </div>
+					<div class="subheading"><i class="fa fa-link">&nbsp;Link(s): </i></div>
 					<div class="link"></div>
 				</div>
 				<div class="technologies">
-					<div class="subheading">Technology: </div>
+					<div class="subheading"><i class="fa fa-code-fork">&nbsp;Technology: </i></div>
 					<div class="tech"></div>
 				</div>
 			</div>
@@ -68,11 +90,11 @@
 				<div class="blurb content" ></div>
 				<div class="content" ></div>
 				<div class="links" >
-					<div class="subheading">Link(s): </div>
+					<div class="subheading"><i class="fa fa-link">&nbsp;Link(s): </i></div>
 					<div class="link" ></div>
 				</div>
 				<div class="technologies">
-					<div class="subheading">Technology: </div>
+					<div class="subheading"><i class="fa fa-code-fork">&nbsp;Technology: </i></div>
 					<div class="tech" ></div>
 				</div>
 			</div>
@@ -101,7 +123,7 @@
 
 				</div>
 				<div class="links">
-					<div class="subheading">Link(s): </div>
+					<div class="subheading"><i class="fa fa-link">&nbsp;Link(s): </i></div>
 					<div class="link" ></div>
 				</div>
 			</div>
